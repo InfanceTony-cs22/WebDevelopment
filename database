@@ -1,0 +1,25 @@
+SELECT Year, Subject, Winner, Country, Category
+FROM (
+    SELECT 1994 AS Year, 'Litrature' AS Subject, 'Kenzaburo Oe' AS Winner, 'Japan' AS Country, 'Linguist' AS Category
+    UNION
+    SELECT 1994, 'Economics', 'Reinhard Heilten', 'Germany', 'Linguist'
+    UNION
+    SELECT 1987, 'Chemistry', 'Donald J. Carm', 'USA', 'Scientist'
+    UNION
+    SELECT 1987, 'Chemistry', 'Jean Marie Lehn', 'France', 'Scientist'
+    UNION
+    SELECT 1987, 'Litrature', 'Joseph Brodsky', 'Russia', 'Linguist'
+    UNION
+    SELECT 1971, 'Chemistry', 'Gerhard Herzbug', 'Germany', 'Scientist'
+    UNION
+    SELECT 1971, 'Litrature', 'Pablo Neruda', 'Chile', 'Linguist'
+    UNION
+    SELECT 1971, 'Economics', 'Simon Kuznets', 'Russia', 'Economist'
+    UNION
+    SELECT 1970, 'Litrature', 'Aleksandr Solzhenitsyn', 'Russia', 'Linguist'
+    UNION
+    SELECT 1970, 'Chemistry', 'Luis Federico Leloir', 'France', 'Scientist'
+    UNION
+    SELECT 1970, 'Economics', 'Paul Samuelson', 'USA', 'Economist'
+    -- Add more rows as needed
+) AS T;
